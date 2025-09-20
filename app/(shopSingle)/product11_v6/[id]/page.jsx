@@ -1,16 +1,14 @@
 import Footer1 from "@/components/footers/Footer1";
-
 import Header1 from "@/components/headers/Header1";
-
-import RelatedSlider from "@/components/singleProduct/RelatedSlider";
-
-import SingleProduct6 from "@/components/singleProduct/SingleProduct6";
 import React from "react";
+import RelatedSlider from "@/components/singleProduct/RelatedSlider";
+import SingleProduct6 from "@/components/singleProduct/SingleProduct6";
 import { allProducts } from "@/data/products";
+
 // e0e0e0;
 export const metadata = {
-  title: "Shop Single 6 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Shop Single 6",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default async function ProductDetailsPage11(props) {
   const params = await props.params;

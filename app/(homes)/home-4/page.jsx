@@ -1,8 +1,7 @@
-import Footer4 from "@/components/footers/Footer4";
-
-import Header4 from "@/components/headers/Header4";
 import Blogs from "@/components/homes/home-4/Blogs";
 import CategoryBanner from "@/components/homes/home-4/CategoryBanner";
+import Footer4 from "@/components/footers/Footer4";
+import Header4 from "@/components/headers/Header4";
 import Hero from "@/components/homes/home-4/Hero";
 import InsideCollextions from "@/components/homes/home-4/InsideCollextions";
 import LimitedEdition from "@/components/homes/home-4/LimitedEdition";
@@ -10,8 +9,8 @@ import Testimonials from "@/components/homes/home-4/Testimonials";
 import TrendingProducts from "@/components/homes/home-4/TrendingProducts";
 
 export const metadata = {
-  title: "Home 4 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 4",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage4() {
   return (

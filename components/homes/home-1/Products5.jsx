@@ -1,9 +1,13 @@
 "use client";
-import { useContextElement } from "@/context/Context";
-import { products1 } from "@/data/products/fashion";
-import Link from "next/link";
+
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
+
+import Image from "next/image";
+import Link from "next/link";
+import { products1 } from "@/data/products/fashion";
+import { useContextElement } from "@/context/Context";
 
 const swiperOptions = {
   modules: [Pagination, Navigation, Autoplay],
@@ -41,58 +45,113 @@ const swiperOptions = {
     },
   },
 };
-import Image from "next/image";
 
 export default function Products5() {
+  const { store } = useContextElement();
   const { toggleWishlist, isAddedtoWishlist } = useContextElement();
   const { addProductToCart, isAddedToCartProducts } = useContextElement();
+  const [limitedProducts, setLimitedProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchLimitedProducts = async () => {
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products/limited/${store?.adn}`);
+        if (!res.ok) return null;
+        const { data } = await res.json();
+        setLimitedProducts(data)
+      } catch (err) {
+        console.error("Failed to fetch trend products:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchLimitedProducts()
+  }, [store]);
+
   return (
     <section className="products-carousel container">
       <h2 className="section-title text-uppercase text-center mb-4 pb-xl-2 mb-xl-4">
-        Limited <strong>Edition</strong>
+        Edition <strong>Limitée</strong>
       </h2>
 
       <div id="product_carousel" className="position-relative">
-        <Swiper
+        {loading ? (
+          <div className="text-center my-5">
+            <div className="spinner-border text-primary" role="status"></div>
+          </div>
+        ) : <Swiper
           style={{ maxWidth: "100vw", overflow: "hidden" }}
           {...swiperOptions}
           className="swiper-container js-swiper-slider"
         >
-          {products1.map((elm, i) => (
+          {limitedProducts.map((elm, i) => (
             <SwiperSlide key={i} className="swiper-slide product-card">
               <div className="pc__img-wrapper">
-                <Link href={`/product1_simple/${elm.id}`}>
+                <Link href={`/product1_simple/${elm._id}`}>
                   <Image
                     loading="lazy"
-                    src={elm.imgSrc}
+                    src={elm?.image ? `${process.env.NEXT_PUBLIC_API_URL}${elm?.image}` : null}
                     width="330"
                     height="400"
-                    alt="Cropped Faux leather Jacket"
+                    alt={elm.label}
                     className="pc__img"
                   />
+                  {elm?.productdetails?.filter(pd => pd.type === 'IMAGE')?.length && (
+                    <Image
+                      loading="lazy"
+                      src={elm?.productdetails?.filter(pd => pd.type === 'IMAGE')?.length ? 
+                          `${process.env.NEXT_PUBLIC_API_URL}${elm?.productdetails?.filter(pd => pd.type === 'IMAGE')[0]?.data}`:
+                          null}
+                      width="330"
+                      height="400"
+                      className="pc__img pc__img-second"
+                      alt="image"
+                    />
+                  )}
                 </Link>
+                <div className="position-absolute right-0 top-0">
+                  {elm.discounted_price !== elm.price ? (
+                    <div className="product-label fs-12 text-uppercase bg-red text-white position-static py-0 mx-3 mt-3 mb-2">
+                      -{Math.round((elm.price - elm.discounted_price) / elm.price * 100)}%
+                    </div>
+                  ) : null}
+                </div>
                 <button
                   className="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside"
-                  onClick={() => addProductToCart(elm.id)}
+                  onClick={() => addProductToCart(elm._id)}
                   title={
-                    isAddedToCartProducts(elm.id)
-                      ? "Already Added"
-                      : "Add to Cart"
+                    isAddedToCartProducts(elm.çid)
+                      ? "Déja ajouté"
+                      : "Ajouter au panier"
                   }
                 >
-                  {isAddedToCartProducts(elm.id)
-                    ? "Already Added"
-                    : "Add To Cart"}
+                  {isAddedToCartProducts(elm._id)
+                    ? "Déja ajouté"
+                    : "Ajouter au panier"}
                 </button>
               </div>
 
               <div className="pc__info position-relative">
-                <p className="pc__category">{elm.category}</p>
+                <p className="pc__category">{elm.category?.label}</p>
                 <h6 className="pc__title">
-                  <Link href={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                  <Link href={`/product1_simple/${elm._id}`}>
+                    {elm.label}
+                  </Link>
                 </h6>
                 <div className="product-card__price d-flex">
-                  <span className="money price">${elm.price}</span>
+                  {elm.discounted_price !== elm.price ? (
+                    <>
+                      <span className="money price text-muted" style={{ textDecoration: "line-through", marginRight: 8 }}>
+                        DZD {elm.price}
+                      </span>
+                      <span className="money price text-red fw-bold">
+                        DZD {elm.discounted_price}
+                      </span>
+                    </>
+                  ) : (
+                    <span className="money price">DZD {elm.price}</span>
+                  )}
                 </div>
                 {elm.reviews && (
                   <div className="product-card__review d-flex align-items-center">
@@ -140,10 +199,9 @@ export default function Products5() {
                 )}
 
                 <button
-                  className={`pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist ${
-                    isAddedtoWishlist(elm.id) ? "active" : ""
-                  }`}
-                  title="Add To Wishlist"
+                  className={`pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist ${isAddedtoWishlist(elm.id) ? "active" : ""
+                    }`}
+                  title="Ajouter au Wishlist"
                   onClick={() => toggleWishlist(elm.id)}
                 >
                   <svg
@@ -160,9 +218,7 @@ export default function Products5() {
             </SwiperSlide>
           ))}
 
-          {/* <!-- /.swiper-wrapper --> */}
-        </Swiper>
-        {/* <!-- /.swiper-container js-swiper-slider --> */}
+        </Swiper>}
 
         <div className="cursor-pointer products-carousel__prev position-absolute top-50 d-flex align-items-center justify-content-center">
           <svg

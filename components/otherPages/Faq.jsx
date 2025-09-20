@@ -1,20 +1,20 @@
 const accordionData = [
   {
     id: 1,
-    heading: "Bring of had which their whose you're it own?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Quels produits proposez-vous ?",
+    body: `NSR Couture propose une large gamme de vêtements et accessoires de haute qualité, incluant des tenues traditionnelles, modernes et sur mesure, adaptées à toutes les occasions.`,
     expanded: true,
   },
   {
     id: 2,
-    heading: "Over shall air can't subdue fly divide him?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Comment passer une commande ?",
+    body: `Pour passer une commande, sélectionnez le produit souhaité, choisissez la taille et la couleur, puis ajoutez-le au panier. Finalisez votre commande en fournissant vos informations de livraison et en procédant au paiement.`,
     expanded: false,
   },
   {
     id: 3,
-    heading: "Waters one you'll creeping?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Puis-je annuler ma commande ?",
+    body: `Vous pouvez annuler votre commande dans un délai de 24 heures après l'avoir passée. Passé ce délai, veuillez contacter notre service client pour connaître les options disponibles.`,
     expanded: false,
   },
 ];
@@ -22,61 +22,59 @@ const accordionData = [
 const accordionData2 = [
   {
     id: 1,
-    heading: "Bring of had which their whose you're it own?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Faites-vous la livraison ?",
+    body: `Oui, nous livrons dans 58 wilayas à travers l'Algérie. Les frais et délais de livraison peuvent varier selon la région et le type de produit commandé.`,
     expanded: true,
   },
   {
     id: 2,
-    heading: "Over shall air can't subdue fly divide him?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Quels sont les délais de livraison ?",
+    body: `Les délais de livraison varient généralement entre 2 et 7 jours ouvrables, selon votre localisation et la disponibilité des produits.`,
     expanded: false,
   },
   {
     id: 3,
-    heading: "Waters one you'll creeping?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Puis-je suivre ma livraison ?",
+    body: `Oui, dès l'expédition, un numéro de suivi vous sera communiqué pour suivre votre commande en temps réel depuis notre site ou le transporteur.`,
     expanded: false,
   },
 ];
+
 const accordionData3 = [
   {
     id: 1,
-    heading: "Bring of had which their whose you're it own?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Quels modes de paiement acceptez-vous ?",
+    body: `Nous acceptons actuellement le paiement à la livraison (espèces ou carte bancaire) pour garantir une sécurité maximale et une expérience simple pour nos clients.`,
     expanded: true,
   },
   {
     id: 2,
-    heading: "Over shall air can't subdue fly divide him?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Puis-je obtenir une facture ?",
+    body: `Oui, une facture détaillée est générée automatiquement pour chaque commande et vous sera envoyée avec votre livraison ou par email.`,
     expanded: false,
   },
   {
     id: 3,
-    heading: "Waters one you'll creeping?",
-    body: `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+    heading: "Les paiements sont-ils sécurisés ?",
+    body: `Oui, tous les paiements sont sécurisés grâce à nos partenaires de paiement et au protocole SSL, garantissant la protection de vos informations personnelles.`,
     expanded: false,
   },
 ];
+
 export default function Faq() {
   return (
     <section className="container mw-930 lh-30">
       <h2 className="section-title text-uppercase fw-bold mb-5">
-        FREQUENTLY ASKED QUESTIONS
+        QUESTIONS FRÉQUEMMENT POSÉES
       </h2>
-      <h3 className="mb-4">Orders</h3>
+
+      <h3 className="mb-4">Commandes</h3>
       <div id="faq_accordion" className="faq-accordion accordion mb-5">
         {accordionData.map((item) => (
           <div key={item.id} className="accordion-item">
-            <h5
-              className="accordion-header"
-              id={`faq-accordion-heading-${item.id}`}
-            >
+            <h5 className="accordion-header" id={`faq-accordion-heading-${item.id}`}>
               <button
-                className={`accordion-button ${
-                  !item.expanded ? "collapsed" : ""
-                }`}
+                className={`accordion-button ${!item.expanded ? "collapsed" : ""}`}
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target={`#faq-accordion-collapse-${item.id}`}
@@ -84,25 +82,11 @@ export default function Faq() {
                 aria-controls={`faq-accordion-collapse-${item.id}`}
               >
                 {item.heading}
-                <svg className="accordion-button__icon" viewBox="0 0 14 14">
-                  <g aria-hidden="true" stroke="none" fillRule="evenodd">
-                    <path
-                      className="svg-path-vertical"
-                      d="M14,6 L14,8 L0,8 L0,6 L14,6"
-                    ></path>
-                    <path
-                      className="svg-path-horizontal"
-                      d="M14,6 L14,8 L0,8 L0,6 L14,6"
-                    ></path>
-                  </g>
-                </svg>
               </button>
             </h5>
             <div
               id={`faq-accordion-collapse-${item.id}`}
-              className={`accordion-collapse collapse ${
-                item.expanded ? "show" : ""
-              }`}
+              className={`accordion-collapse collapse ${item.expanded ? "show" : ""}`}
               aria-labelledby={`faq-accordion-heading-${item.id}`}
               data-bs-parent="#faq_accordion"
             >
@@ -113,18 +97,14 @@ export default function Faq() {
           </div>
         ))}
       </div>
-      <h3 className="mb-4">Shipping</h3>
+
+      <h3 className="mb-4">Livraison</h3>
       <div id="faq_accordion_2" className="faq-accordion accordion mb-5">
         {accordionData2.map((item) => (
           <div key={item.id} className="accordion-item">
-            <h5
-              className="accordion-header"
-              id={`faq-accordion-heading-2-${item.id}`}
-            >
+            <h5 className="accordion-header" id={`faq-accordion-heading-2-${item.id}`}>
               <button
-                className={`accordion-button ${
-                  !item.expanded ? "collapsed" : ""
-                }`}
+                className={`accordion-button ${!item.expanded ? "collapsed" : ""}`}
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target={`#faq-accordion-collapse-2-${item.id}`}
@@ -132,25 +112,11 @@ export default function Faq() {
                 aria-controls={`faq-accordion-collapse-2-${item.id}`}
               >
                 {item.heading}
-                <svg className="accordion-button__icon" viewBox="0 0 14 14">
-                  <g aria-hidden="true" stroke="none" fillRule="evenodd">
-                    <path
-                      className="svg-path-vertical"
-                      d="M14,6 L14,8 L0,8 L0,6 L14,6"
-                    ></path>
-                    <path
-                      className="svg-path-horizontal"
-                      d="M14,6 L14,8 L0,8 L0,6 L14,6"
-                    ></path>
-                  </g>
-                </svg>
               </button>
             </h5>
             <div
               id={`faq-accordion-collapse-2-${item.id}`}
-              className={`accordion-collapse collapse ${
-                item.expanded ? "show" : ""
-              }`}
+              className={`accordion-collapse collapse ${item.expanded ? "show" : ""}`}
               aria-labelledby={`faq-accordion-heading-2-${item.id}`}
               data-bs-parent="#faq_accordion_2"
             >
@@ -161,18 +127,14 @@ export default function Faq() {
           </div>
         ))}
       </div>
-      <h3 className="mb-4">Payment</h3>
+
+      <h3 className="mb-4">Paiement</h3>
       <div id="faq_accordion_3" className="faq-accordion accordion mb-5">
         {accordionData3.map((item) => (
           <div key={item.id} className="accordion-item">
-            <h5
-              className="accordion-header"
-              id={`faq-accordion-heading-3-${item.id}`}
-            >
+            <h5 className="accordion-header" id={`faq-accordion-heading-3-${item.id}`}>
               <button
-                className={`accordion-button ${
-                  !item.expanded ? "collapsed" : ""
-                }`}
+                className={`accordion-button ${!item.expanded ? "collapsed" : ""}`}
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target={`#faq-accordion-collapse-3-${item.id}`}
@@ -180,25 +142,11 @@ export default function Faq() {
                 aria-controls={`faq-accordion-collapse-3-${item.id}`}
               >
                 {item.heading}
-                <svg className="accordion-button__icon" viewBox="0 0 14 14">
-                  <g aria-hidden="true" stroke="none" fillRule="evenodd">
-                    <path
-                      className="svg-path-vertical"
-                      d="M14,6 L14,8 L0,8 L0,6 L14,6"
-                    ></path>
-                    <path
-                      className="svg-path-horizontal"
-                      d="M14,6 L14,8 L0,8 L0,6 L14,6"
-                    ></path>
-                  </g>
-                </svg>
               </button>
             </h5>
             <div
               id={`faq-accordion-collapse-3-${item.id}`}
-              className={`accordion-collapse collapse ${
-                item.expanded ? "show" : ""
-              }`}
+              className={`accordion-collapse collapse ${item.expanded ? "show" : ""}`}
               aria-labelledby={`faq-accordion-heading-3-${item.id}`}
               data-bs-parent="#faq_accordion_3"
             >

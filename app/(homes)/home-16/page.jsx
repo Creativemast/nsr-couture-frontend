@@ -1,19 +1,18 @@
-import Footer15 from "@/components/footers/Footer15";
-
-import Header15 from "@/components/headers/Header15";
 import BannerSlider from "@/components/homes/home-16/BannerSlider";
 import Blogs from "@/components/homes/home-16/Blogs";
 import Equipments from "@/components/homes/home-16/Equipments";
 import Features from "@/components/homes/home-16/Features";
+import Footer15 from "@/components/footers/Footer15";
 import GridBanner from "@/components/homes/home-16/GridBanner";
+import Header15 from "@/components/headers/Header15";
 import Hero from "@/components/homes/home-16/Hero";
 import MostPopuler from "@/components/homes/home-16/MostPopuler";
-import VideoBanner from "@/components/homes/home-16/VideoBanner";
 import React from "react";
+import VideoBanner from "@/components/homes/home-16/VideoBanner";
 
 export const metadata = {
-  title: "Home 16 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 16",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage16() {
   return (

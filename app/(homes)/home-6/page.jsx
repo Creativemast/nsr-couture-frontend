@@ -1,14 +1,13 @@
-import Footer6 from "@/components/footers/Footer6";
-
-import Header6 from "@/components/headers/Header6";
 import CategoryMassonry from "@/components/homes/home-6/CategoryMassonry";
+import Footer6 from "@/components/footers/Footer6";
+import Header6 from "@/components/headers/Header6";
 import Hero from "@/components/homes/home-6/Hero";
 import Instagram from "@/components/homes/home-6/Instagram";
 import React from "react";
 
 export const metadata = {
-  title: "Home 6 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 6",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage6() {
   return (

@@ -1,17 +1,16 @@
-import Footer3 from "@/components/footers/Footer3";
-
-import Header3 from "@/components/headers/Header3";
 import Categories from "@/components/homes/home-3/Categories";
 import CategoryBanner from "@/components/homes/home-3/CategoryBanner";
 import FeaturesProducts from "@/components/homes/home-3/FeaturesProducts";
+import Footer3 from "@/components/footers/Footer3";
+import Header3 from "@/components/headers/Header3";
 import Hero from "@/components/homes/home-3/Hero";
 import HotDeals from "@/components/homes/home-3/HotDeals";
 import Instagram from "@/components/homes/home-3/Instagram";
 import React from "react";
 
 export const metadata = {
-  title: "Home 3 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 3",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage3() {
   return (

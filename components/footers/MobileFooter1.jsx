@@ -1,6 +1,9 @@
-import { useContextElement } from "@/context/Context";
-import Link from "next/link";
+'use client'
+
 import React, { useEffect, useState } from "react";
+
+import Link from "next/link";
+import { useContextElement } from "@/context/Context";
 
 export default function MobileFooter1() {
   const [showFooter, setShowFooter] = useState(false);

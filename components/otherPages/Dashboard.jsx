@@ -1,27 +1,28 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
+import { getCurrentUser } from "@/utlis/getCurrentUser";
 
-export default function Dashboard() {
+export default async function Dashboard({ user }) {
   return (
     <div className="col-lg-9">
       <div className="page-content my-account__dashboard">
         <p>
-          Hello <strong>alitfn58</strong> (not <strong>alitfn58?</strong>
-          <Link href="/login_register">Log out</Link>)
+          Salut <strong>{user?.profile?.first_name?.toUpperCase()} {user?.profile?.last_name?.toUpperCase()}</strong>
         </p>
         <p>
-          From your account dashboard you can view your
-          <Link className="unerline-link" href="/account_orders">
-            recent orders
+          Depuis votre tableau de bord, vous pouvez consulter vos 
+          <Link className="unerline-link ml-2" href="/account_orders" style={{marginLeft: 5}}>
+            commandes récentes
           </Link>
-          , manage your
-          <Link className="unerline-link" href="/account_edit_address">
-            shipping and billing addresses
+          , gérer vos
+          <Link className="unerline-link" href="/account_edit_address" style={{marginLeft: 5}}>
+            adresses de livraison et de facturation
           </Link>
-          , and
-          <Link className="unerline-link" href="/account_edit">
-            edit your password and account details.
+          , et
+          <Link className="unerline-link" href="/account_edit" style={{marginLeft: 5}}>
+            modifier votre mot de passe et les informations de votre compte
           </Link>
+          .
         </p>
       </div>
     </div>

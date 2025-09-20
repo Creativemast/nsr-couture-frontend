@@ -1,15 +1,17 @@
 "use client";
-import { currencyOptions, languageOptions } from "@/data/footer";
-
-import { socialLinks } from "@/data/socials";
 
 import React, { useEffect, useState } from "react";
+import { currencyOptions, languageOptions } from "@/data/footer";
+
 import CartLength from "./components/CartLength";
-import { openCart } from "@/utlis/openCart";
-import MobileNav from "./components/MobileNav";
 import Image from "next/image";
+import MobileNav from "./components/MobileNav";
+import { openCart } from "@/utlis/openCart";
+import { socialLinks } from "@/data/socials";
+import { useContextElement } from "@/context/Context";
 
 export default function MobileHeader() {
+  const { store } = useContextElement();
   const [scrollDirection, setScrollDirection] = useState("down");
 
   useEffect(() => {
@@ -66,10 +68,10 @@ export default function MobileHeader() {
         <div className="logo">
           <a href="/">
             <Image
-              src="/assets/images/logo.png"
-              width={112}
-              height={28}
-              alt="Uomo"
+              src={store ? `${process.env.NEXT_PUBLIC_API_URL}${store?.logo}` : "/assets/images/logo.png"}
+              width={70}
+              height={58}
+              alt="NSR"
               className="logo__image d-block"
             />
           </a>

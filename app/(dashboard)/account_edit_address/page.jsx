@@ -1,15 +1,22 @@
-import Footer1 from "@/components/footers/Footer1";
-
-import Header1 from "@/components/headers/Header1";
 import DashboardSidebar from "@/components/otherPages/DashboardSidebar";
 import EditAddress from "@/components/otherPages/EditAddress";
+import Footer1 from "@/components/footers/Footer1";
+import Header1 from "@/components/headers/Header1";
 import React from "react";
+import { getCurrentUser } from "@/utlis/getCurrentUser";
+import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Dashboard Edit Address || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Dashboard Edit Address",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
-export default function AccountEditAddressPage() {
+export default async function AccountEditAddressPage() {
+  const user = await getCurrentUser();
+    
+  if (!user) {
+    redirect("/login_register");
+  }
+  
   return (
     <>
       <Header1 />

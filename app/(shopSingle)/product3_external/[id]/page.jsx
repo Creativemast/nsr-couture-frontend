@@ -1,14 +1,13 @@
 import Footer1 from "@/components/footers/Footer1";
-
 import Header1 from "@/components/headers/Header1";
+import React from "react";
 import RelatedSlider from "@/components/singleProduct/RelatedSlider";
 import SingleProduct13 from "@/components/singleProduct/SingleProduct13";
-import React from "react";
 import { allProducts } from "@/data/products";
 
 export const metadata = {
-  title: "Shop Single 3 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Shop Single 3",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default async function ProductDetailsPage3(props) {
   const params = await props.params;

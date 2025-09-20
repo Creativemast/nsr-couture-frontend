@@ -1,15 +1,22 @@
-import Footer1 from "@/components/footers/Footer1";
-
-import Header1 from "@/components/headers/Header1";
 import AccountWishlist from "@/components/otherPages/AccountWishlist";
 import DashboardSidebar from "@/components/otherPages/DashboardSidebar";
+import Footer1 from "@/components/footers/Footer1";
+import Header1 from "@/components/headers/Header1";
 import React from "react";
+import { getCurrentUser } from "@/utlis/getCurrentUser";
+import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Dashboard Account Wishlist || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Dashboard Account Wishlist",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
-export default function AccountWishlistPage() {
+export default async function AccountWishlistPage() {
+  const user = await getCurrentUser();
+    
+  if (!user) {
+    redirect("/login_register");
+  }
+  
   return (
     <>
       <Header1 />

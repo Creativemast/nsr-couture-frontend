@@ -1,14 +1,12 @@
-import Footer1 from "@/components/footers/Footer1";
-
-import Header1 from "@/components/headers/Header1";
 import Contact from "@/components/otherPages/Contact/Contact";
+import Footer1 from "@/components/footers/Footer1";
+import Header1 from "@/components/headers/Header1";
 import LocationMap from "@/components/otherPages/Contact/LocationMap";
-
 import React from "react";
 
 export const metadata = {
-  title: "Contact || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Contact",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function ContactPage() {
   return (

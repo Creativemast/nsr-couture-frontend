@@ -1,13 +1,12 @@
-import Footer1 from "@/components/footers/Footer1";
-
-import Header1 from "@/components/headers/Header1";
 import Categories from "@/components/shoplist/Categories";
-import Shop8 from "@/components/shoplist/Shop8";
+import Footer1 from "@/components/footers/Footer1";
+import Header1 from "@/components/headers/Header1";
 import React from "react";
+import Shop8 from "@/components/shoplist/Shop8";
 
 export const metadata = {
-  title: "Shop 8 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Shop 8",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function ShopPage8() {
   return (

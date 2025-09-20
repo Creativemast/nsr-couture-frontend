@@ -1,21 +1,16 @@
-import LoginFormPopup from "@/components/common/LoginFormPopup";
-import Footer1 from "@/components/footers/Footer1";
-
-import Header1 from "@/components/headers/Header1";
 import Features from "@/components/common/features/Features";
+import Footer1 from "@/components/footers/Footer1";
+import Header1 from "@/components/headers/Header1";
 import Hero from "@/components/homes/home-1/Hero";
 import InstaGram from "@/components/homes/home-1/InstaGram";
+import LoginFormPopup from "@/components/common/LoginFormPopup";
 import Products1 from "@/components/homes/home-1/Products1";
 import Products2 from "@/components/homes/home-1/Products2";
 import Products3 from "@/components/homes/home-1/Products3";
 import Products4 from "@/components/homes/home-1/Products4";
 import Products5 from "@/components/homes/home-1/Products5";
 
-export const metadata = {
-  title: "Home 1 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
-};
-export default function HomePage1() {
+export default async function HomePage1() {  
   return (
     <>
       <div>
@@ -27,10 +22,10 @@ export default function HomePage1() {
           <Products1 />
           <div className="mb-4 pb-4 mb-xl-5 pb-xl-5"></div>
           <Products2 />
-          <div className="mb-3 mb-xl-5 pb-1 pb-xl-5"></div>
+          {/*<div className="mb-3 mb-xl-5 pb-1 pb-xl-5"></div>
           <Products3 />
           <div className="mb-3 mb-xl-5 pb-1 pb-xl-5"></div>
-          <Products4 />
+          <Products4 />*/}
           <div className="mb-5 pb-1 pb-xl-4"></div>
           <Products5 />
           <InstaGram />

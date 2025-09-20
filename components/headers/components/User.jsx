@@ -5,7 +5,8 @@ import { openModalUserlogin } from "@/utlis/aside";
 export default function User() {
   return (
     <svg
-      onClick={openModalUserlogin}
+      //onClick={openModalUserlogin}
+      onClick={() => window.location.href = "/account_dashboard"}
       className="d-block"
       width="20"
       height="20"

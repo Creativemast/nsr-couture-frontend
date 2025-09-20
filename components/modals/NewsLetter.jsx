@@ -1,7 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef } from "react";
+
+import Image from "next/image";
 
 export default function NewsLetter() {
   const modalElement = useRef();
@@ -14,7 +15,7 @@ export default function NewsLetter() {
       }
     );
 
-    myModal.show();
+    myModal.hide();
     modalElement.current.addEventListener("hidden.bs.modal", () => {
       myModal.hide();
     });

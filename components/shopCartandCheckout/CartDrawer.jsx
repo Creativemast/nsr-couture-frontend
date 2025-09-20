@@ -1,9 +1,10 @@
 "use client";
-import Link from "next/link";
 
-import { useContextElement } from "@/context/Context";
 import React, { useEffect } from "react";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useContextElement } from "@/context/Context";
 import { usePathname } from "next/navigation";
 
 export default function CartDrawer() {

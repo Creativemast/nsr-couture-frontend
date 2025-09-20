@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function CookieContainer() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <>
       {show && (

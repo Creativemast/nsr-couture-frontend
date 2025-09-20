@@ -1,11 +1,13 @@
 "use client";
-import Link from "next/link";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Pagination } from "swiper/modules";
-import { slides1 } from "@/data/heroslides";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Image from "next/image";
+import Link from "next/link";
+import { slides1 } from "@/data/heroslides";
 import { socialLinks } from "@/data/socials";
+
 export default function Hero() {
   const swiperOptions = {
     autoplay: {
@@ -53,9 +55,9 @@ export default function Hero() {
               <Image
                 loading="lazy"
                 src={elm.characterImg}
-                width="400"
-                height="733"
-                alt="Woman Fashion 1"
+                width="600"
+                height="933"
+                alt="Woman Fashion"
                 className="slideshow-character__img animate animate_fade animate_btt animate_delay-9 h-auto w-auto"
               />
               <div className="character_markup">
@@ -68,11 +70,11 @@ export default function Hero() {
               <h6 className="text_dash text-uppercase text-red fs-base fw-medium animate animate_fade animate_btt animate_delay-3">
                 {elm.text1}
               </h6>
-              <h2 className="text-uppercase h1 fw-normal mb-0 animate animate_fade animate_btt animate_delay-5">
+              <h2 className="text-uppercase h1 fw-normal mb-0 fs-1 animate animate_fade animate_btt animate_delay-5">
                 {elm.text2}
               </h2>
               {elm.text3 ? (
-                <h2 className="text-uppercase h1 fw-bold animate animate_fade animate_btt animate_delay-5">
+                <h2 className="text-uppercase h1 fw-bold fs-2 animate animate_fade animate_btt animate_delay-5">
                   {elm.text3}
                 </h2>
               ) : (
@@ -89,7 +91,7 @@ export default function Hero() {
                 href="/shop-1"
                 className="btn-link btn-link_lg default-underline text-uppercase fw-medium animate animate_fade animate_btt animate_delay-7"
               >
-                Discover More
+                Explorer Plus
               </Link>
             </div>
           </div>

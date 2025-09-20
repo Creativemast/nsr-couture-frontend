@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 export default function Products1() {
   return (
@@ -9,115 +9,86 @@ export default function Products1() {
     >
       <div className="container h-md-100">
         <div className="row h-md-100">
+          {/* Colonne gauche - grande image */}
           <div className="col-lg-6 h-md-100">
             <div className="collection-grid__item position-relative h-md-100">
               <div
                 className="background-img"
                 style={{
-                  backgroundImage: "url(/assets/images/collection_grid_1.jpg)",
+                  backgroundImage: "url(/assets/images/collection_khimaret.png)",
                 }}
               ></div>
               <div className="content_abs content_bottom content_left content_bottom-md content_left-md">
-                <p className="text-uppercase mb-1">Hot List</p>
+                <p className="text-uppercase mb-1">Nouvelle Collection</p>
                 <h3 className="text-uppercase">
-                  <strong>Women</strong> Collection
+                  <strong>Khimaret</strong>
                 </h3>
                 <Link
                   href="/shop-1"
                   className="btn-link default-underline text-uppercase fw-medium"
                 >
-                  Shop Now
+                  Explorer
                 </Link>
               </div>
-              {/* <!-- /.content_abs content_bottom content_left content_bottom-md content_left-md --> */}
             </div>
           </div>
-          {/* <!-- /.col-md-6 --> */}
 
+          {/* Colonne droite */}
           <div className="col-lg-6 d-flex flex-column">
+            {/* Abaat */}
             <div className="collection-grid__item position-relative flex-grow-1 mb-lg-4">
               <div
                 className="background-img"
                 style={{
-                  backgroundImage: "url(/assets/images/collection_grid_2.jpg)",
+                  backgroundImage: "url(/assets/images/collection_abaa.png)",
                 }}
               ></div>
               <div className="content_abs content_bottom content_left content_bottom-md content_left-md">
-                <p className="text-uppercase mb-1">Hot List</p>
+                <p className="text-uppercase mb-1">Élégance</p>
                 <h3 className="text-uppercase">
-                  <strong>Men</strong> Collection
+                  <strong>Abayat</strong>
                 </h3>
                 <Link
                   href="/shop-1"
                   className="btn-link default-underline text-uppercase fw-medium"
                 >
-                  Shop Now
+                  Explorer
                 </Link>
               </div>
-              {/* <!-- /.content_abs content_bottom content_left content_bottom-md content_left-md --> */}
             </div>
+
+            {/* Accessoires */}
             <div className="position-relative flex-grow-1 mt-lg-1">
               <div className="row h-md-100">
-                <div className="col-md-6 h-md-100">
+                <div className="col-md-12 h-md-100">
                   <div className="collection-grid__item h-md-100 position-relative">
                     <div
                       className="background-img"
                       style={{
                         backgroundImage:
-                          "url(/assets/images/collection_grid_3.jpg)",
+                          "url(/assets/images/collection_accessoires.png)",
                       }}
                     ></div>
                     <div className="content_abs content_bottom content_left content_bottom-md content_left-md">
-                      <p className="text-uppercase mb-1">Hot List</p>
+                      <p className="text-uppercase mb-1">Style</p>
                       <h3 className="text-uppercase">
-                        <strong>Kids</strong> Collection
+                        <strong>Accessoires</strong>
                       </h3>
                       <Link
                         href="/shop-1"
                         className="btn-link default-underline text-uppercase fw-medium"
                       >
-                        Shop Now
+                        Explorer
                       </Link>
                     </div>
-                    {/* <!-- /.content_abs content_bottom content_left content_bottom-md content_left-md --> */}
                   </div>
-                  {/* <!-- /.collection-grid__item --> */}
-                </div>
-
-                <div className="col-md-6 h-md-100">
-                  <div className="collection-grid__item h-md-100 position-relative">
-                    <div
-                      className="background-img"
-                      style={{ backgroundColor: "#f5e6e0" }}
-                    ></div>
-                    <div className="content_abs content_bottom content_left content_bottom-md content_left-md">
-                      <h3 className="text-uppercase">
-                        <strong>E-Gift</strong> Cards
-                      </h3>
-                      <p className="mb-1">
-                        Surprise someone with the gift they
-                        <br />
-                        really want.
-                      </p>
-                      <Link
-                        href="/shop-1"
-                        className="btn-link default-underline text-uppercase fw-medium"
-                      >
-                        Shop Now
-                      </Link>
-                    </div>
-                    {/* <!-- /.content_abs content_bottom content_left content_bottom-md content_left-md --> */}
-                  </div>
-                  {/* <!-- /.collection-grid__item --> */}
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- /.col-md-6 --> */}
+          {/* Fin colonne droite */}
         </div>
-        {/* <!-- /.row --> */}
       </div>
-      {/* <!-- /.container --> */}
     </section>
   );
 }

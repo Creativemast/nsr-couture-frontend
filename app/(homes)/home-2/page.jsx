@@ -1,19 +1,18 @@
-import Footer2 from "@/components/footers/Footer2";
-
-import Header2 from "@/components/headers/Header2";
 import Banner from "@/components/homes/home-2/Banner";
 import Blogs from "@/components/homes/home-2/Blogs";
 import Brands from "@/components/homes/home-2/Brands";
 import Categories from "@/components/homes/home-2/Categories";
+import Footer2 from "@/components/footers/Footer2";
 import GridBanner from "@/components/homes/home-2/GridBanner";
+import Header2 from "@/components/headers/Header2";
 import Hero from "@/components/homes/home-2/Hero";
 import Products from "@/components/homes/home-2/Products";
 import Products2 from "@/components/homes/home-2/Products2";
 import React from "react";
 
 export const metadata = {
-  title: "Home 2 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 2",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage2() {
   return (

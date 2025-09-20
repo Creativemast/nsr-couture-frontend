@@ -1,12 +1,10 @@
 import Footer1 from "@/components/footers/Footer1";
-
 import Header1 from "@/components/headers/Header1";
-
 import Shop4 from "@/components/shoplist/Shop4";
 
 export const metadata = {
-  title: "Shop 4 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Shop 4",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function ShopPage4() {
   return (

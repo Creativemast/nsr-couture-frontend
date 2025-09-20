@@ -5,12 +5,12 @@ import Hero from "@/components/homes/home-7/Hero";
 import Lookbook from "@/components/homes/home-7/Lookbook";
 import ProductsGrid from "@/components/homes/home-7/ProductsGrid";
 import ProductsSlider from "@/components/homes/home-7/ProductsSlider";
-import TrendingProducts from "@/components/homes/home-7/TrendingProducts";
 import React from "react";
+import TrendingProducts from "@/components/homes/home-7/TrendingProducts";
 
 export const metadata = {
-  title: "Home 7 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 7",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage7() {
   return (

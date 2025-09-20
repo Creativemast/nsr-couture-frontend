@@ -1,21 +1,27 @@
 export const servicePromotions = [
   {
     id: 1,
-    icon: "#icon_shipping",
-    title: "Fast And Free Delivery",
-    content: "Free delivery for all orders over $140",
+    icon: "#icon_price",
+    title: "Meilleur Prix Garanti",
+    content: "Des tarifs compétitifs sur tous nos produits",
   },
   {
     id: 2,
     icon: "#icon_headphone",
-    title: "24/7 Customer Support",
-    content: "Friendly 24/7 customer support",
+    title: "Assistance 24h/7j",
+    content: "Un support client disponible à tout moment",
   },
   {
     id: 3,
-    icon: "#icon_shield",
-    title: "Money Back Guarantee",
-    content: "We return money within 30 days",
+    icon: "#icon_truck",
+    title: "Livraison à Domicile",
+    content: "Recevez vos commandes directement chez vous",
+  },
+  {
+    id: 4,
+    icon: "#icon_store",
+    title: "Point Relais",
+    content: "Récupérez vos commandes dans le point relais le plus proche",
   },
 ];
 export const servicesData = [

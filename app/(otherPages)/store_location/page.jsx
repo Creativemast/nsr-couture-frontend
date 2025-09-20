@@ -1,13 +1,11 @@
 import Footer1 from "@/components/footers/Footer1";
-
 import Header1 from "@/components/headers/Header1";
-
-import StoreLocator from "@/components/otherPages/StoreLocator";
 import React from "react";
+import StoreLocator from "@/components/otherPages/StoreLocator";
 
 export const metadata = {
-  title: "Store Location || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Store Location",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function StoreLocationPage() {
   return (

@@ -1,25 +1,24 @@
 export const slides1 = [
   {
     id: 1,
-
-    characterImg: "/assets/images/slideshow-character1.png",
-    characterAlt: "Woman Fashion 1",
-    characterText: "Summer",
-    text1: "New Trend",
-    text2: "Summer Sale Stylish",
-    text3: "Womens",
+    characterImg: "/assets/images/slideshow-1.png",
+    characterAlt: "Abayas Élégante",
+    characterText: "Collection 2025",
+    text1: "Nouvelle Tendance",
+    text2: "Abayas Élégantes & Modernes",
+    text3: "Confort & Style au Quotidien",
   },
   {
     id: 2,
-
-    characterImg: "/assets/images/slideshow-character2.png",
-    characterAlt: "Woman Fashion 2",
-    characterText: "",
-    text1: "Summer 2020",
-    text3: "Hello New Season",
-    text4: "Limited Time Offer - Up to 60% off & Free Shipping",
+    characterImg: "/assets/images/slideshow-2.png",
+    characterAlt: "Khimar Chic",
+    characterText: "Édition Limitée",
+    text1: "Saison Automne",
+    text2: "Khimaret Fluides & Élégants",
+    text4: "Jusqu’à -40% • Livraison Gratuite",
   },
 ];
+
 export const slides2 = [
   {
     id: 1,

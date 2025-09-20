@@ -4,8 +4,8 @@ import Hero from "@/components/homes/home-8/Hero";
 import React from "react";
 
 export const metadata = {
-  title: "Home 8 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 8",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage8() {
   return (

@@ -1,16 +1,20 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useState } from "react";
-import Nav from "./components/Nav";
-import { openCart } from "@/utlis/openCart";
+
 import CartLength from "./components/CartLength";
 import Image from "next/image";
-import User from "./components/User";
+import Link from "next/link";
+import Nav from "./components/Nav";
 import SearchPopup from "./components/SearchPopup";
+import User from "./components/User";
+import { openCart } from "@/utlis/openCart";
+import { redirect } from "next/dist/server/api-utils";
+import { useContextElement } from "@/context/Context";
 
 export default function Header1() {
+  const { store } = useContextElement();
   const [scrollDirection, setScrollDirection] = useState("down");
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -41,6 +45,9 @@ export default function Header1() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  if (!store) return null;
+  
   return (
     <header
       id="header"
@@ -53,10 +60,10 @@ export default function Header1() {
           <div className="logo">
             <Link href="/">
               <Image
-                src="/assets/images/logo.png"
-                width={112}
-                height={28}
-                alt="Uomo"
+                src={store ? `${process.env.NEXT_PUBLIC_API_URL}${store?.logo}` : "/assets/images/logo.png"}
+                width={82}
+                height={58}
+                alt="NSR"
                 className="logo__image d-block"
               />
             </Link>
@@ -72,7 +79,6 @@ export default function Header1() {
           {/* <!-- /.navigation --> */}
 
           <div className="header-tools d-flex align-items-center">
-            <SearchPopup />
 
             {/* <!-- /.header-tools__item hover-container --> */}
 

@@ -1,17 +1,21 @@
 "use client";
-import { allProducts } from "@/data/products";
+
 import React, { useEffect } from "react";
 import { useContext, useState } from "react";
+
+import { allProducts } from "@/data/products";
 const dataContext = React.createContext();
 export const useContextElement = () => {
   return useContext(dataContext);
 };
 
-export default function Context({ children }) {
+export default function Context({ children, initialStore = null }) {
   const [cartProducts, setCartProducts] = useState([]);
   const [wishList, setWishList] = useState([]);
   const [quickViewItem, setQuickViewItem] = useState(allProducts[0]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [store, setStore] = useState(initialStore);
+
   useEffect(() => {
     const subtotal = cartProducts.reduce((accumulator, product) => {
       return accumulator + product.quantity * product.price;
@@ -85,6 +89,8 @@ export default function Context({ children }) {
     quickViewItem,
     wishList,
     setQuickViewItem,
+    store,
+    setStore,
   };
   return (
     <dataContext.Provider value={contextElement}>

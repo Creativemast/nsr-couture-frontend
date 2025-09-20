@@ -26,7 +26,7 @@ export const homePages = [
 export const shopList = [
   {
     id: 1,
-    href: "/shop-1",
+    href: "/shop",
     title: "Shop List V1",
   },
   {
@@ -137,45 +137,15 @@ export const blogmenuItems = [
 
 export const othersMenuItems = [
   {
-    id: 1,
-    href: "/account_dashboard",
-    title: "My Account",
-  },
-  {
-    id: 2,
-    href: "/login_register",
-    title: "Login / Register",
-  },
-  {
-    id: 3,
-    href: "/store_location",
-    title: "Store Locator",
-  },
-  {
-    id: 4,
-    href: "/lookbook",
-    title: "Lookbook",
-  },
-  {
     id: 5,
     href: "/faq",
-    title: "Faq",
+    title: "FAQ",
   },
   {
     id: 6,
     href: "/terms",
-    title: "Terms",
-  },
-  {
-    id: 7,
-    href: "/page-not-found",
-    title: "404 Error",
-  },
-  {
-    id: 8,
-    href: "/coming_soon",
-    title: "Coming Soon",
-  },
+    title: "Conditions d’Utilisation",
+  }
 ];
 
 export const dashboardMenuItems = [
@@ -203,10 +173,5 @@ export const dashboardMenuItems = [
     id: 5,
     href: "/account_wishlist",
     title: "Wishlist",
-  },
-  {
-    id: 6,
-    href: "/login_register",
-    title: "Logout",
-  },
+  }
 ];

@@ -1,20 +1,20 @@
-import Header20 from "@/components/headers/Header20";
-import Testimonials from "@/components/homes/home-20/Testimonials";
 import BestSeller from "@/components/homes/home-20/BestSeller";
 import Categories from "@/components/homes/home-20/Categories";
 import Clothing from "@/components/homes/home-20/Clothing";
 import Collections from "@/components/homes/home-20/Collections";
 import Features from "@/components/homes/home-20/Features";
-import Hero from "@/components/homes/home-20/Hero";
-import StrollerCollection from "@/components/homes/home-20/StrollerCollection";
-import ToysCollection from "@/components/homes/home-20/ToysCollection";
-import React from "react";
-import Instagram from "@/components/homes/home-20/Instagram";
 import Footer20 from "@/components/footers/Footer20";
+import Header20 from "@/components/headers/Header20";
+import Hero from "@/components/homes/home-20/Hero";
+import Instagram from "@/components/homes/home-20/Instagram";
+import React from "react";
+import StrollerCollection from "@/components/homes/home-20/StrollerCollection";
+import Testimonials from "@/components/homes/home-20/Testimonials";
+import ToysCollection from "@/components/homes/home-20/ToysCollection";
 
 export const metadata = {
-  title: "Home 20 || Uomo eCommerce React Nextjs Template",
-  description: "Uomo eCommerce React Nextjs Template",
+  title: "Home 20",
+  description: "Découvrez l'élégance moderne à travers des collections de mode uniques et raffinées.",
 };
 export default function HomePage20() {
   return (
